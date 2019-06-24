@@ -10,6 +10,7 @@ namespace shop.Database
         public static List<Category> Categories()
         {
             var result = new List<Category>();
+            result.Add(new Category(new Guid("044dae06-30a1-4ced-8eee-6859fd43bace"), "Todos", "todos"));
             result.Add(new Category(new Guid("044dae05-30a1-4ced-8eee-6859fd43bace"), "Celulares e Telefonia", "telefonia"));
             result.Add(new Category(new Guid("795bc1b3-7455-436c-81b6-a06b4a037e30"), "Automotivo", "automotivo"));
             result.Add(new Category(new Guid("6b3448ab-1482-4d48-bfc7-a426e1583d21"), "Brinquedos e Bebês", "brinquedos"));
