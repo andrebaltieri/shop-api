@@ -25,7 +25,7 @@ namespace shop.Database
         public static List<Product> Products()
         {
             var result = new List<Product>();
-            #region Telefonia
+            #region telefonia
             result.Add(new Product(
                 new Guid("9a0dc81e-0b76-427f-8f9e-7502c2bd1005"),
                 "Smartphone Motorola One 64GB",
@@ -98,10 +98,32 @@ namespace shop.Database
             ));
             #endregion
 
+            #region informatica
+            result.Add(new Product(
+                new Guid("f58448de-bb53-48fa-8347-70bad73f1ec4"),
+                "Notebook Samsung Essentials E30",
+                "notebook-samsung-essentials-e30",
+                1709.99,
+                "Com o Notebook Essentials da Samsung você terá um notebook de última geração, prático e veloz, com excelente capacidade de armazenamento, conta com memória RAM de 4GB e HD 1TB, além de um design inovador e exclusivo, você estará sempre conectado com estilo. <br>Com tela LED Full HD 15,6 oferece a melhor imagem, conta com entradas HDMI, placa de vídeo Intel® HD Graphics 620 integrada, sistema operacional Windows 10, Bluetooth e placa de som HD (High Definition) Audio. Um excelente Notebook para executar seus trabalhos com qualidade e rapidez. ",
+                "Samsung",
+                new string[]{
+                    "https://baltademos.blob.core.windows.net/eshop/gnotebook-samsung-essentials-e30.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-002.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-003.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-004.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-005.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-006.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-007.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-008.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-009.jpg"
+                },
+                new Category(new Guid("d670402e-1a61-4de7-bdde-185501ab04e5"), "Informática", "informatica"))
+            );
+            #endregion
             // 
             // 
             // 
-            // f58448de-bb53-48fa-8347-70bad73f1ec4
+            // 
             // dd5a0bf0-d2f1-4b13-a50e-bb4946862cab
             // e6dd2d93-84a9-43f6-9d35-79054a8368c4
             // 1297eef5-33a5-41e9-9c8a-2344cb317ab0
