@@ -107,7 +107,7 @@ namespace shop.Database
                 "Com o Notebook Essentials da Samsung você terá um notebook de última geração, prático e veloz, com excelente capacidade de armazenamento, conta com memória RAM de 4GB e HD 1TB, além de um design inovador e exclusivo, você estará sempre conectado com estilo. <br>Com tela LED Full HD 15,6 oferece a melhor imagem, conta com entradas HDMI, placa de vídeo Intel® HD Graphics 620 integrada, sistema operacional Windows 10, Bluetooth e placa de som HD (High Definition) Audio. Um excelente Notebook para executar seus trabalhos com qualidade e rapidez. ",
                 "Samsung",
                 new string[]{
-                    "https://baltademos.blob.core.windows.net/eshop/gnotebook-samsung-essentials-e30.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30.jpg",
                     "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-002.jpg",
                     "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-003.jpg",
                     "https://baltademos.blob.core.windows.net/eshop/notebook-samsung-essentials-e30-004.jpg",
