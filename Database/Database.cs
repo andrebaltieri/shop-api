@@ -61,8 +61,24 @@ namespace shop.Database
                 },
                 new Category(new Guid("044dae05-30a1-4ced-8eee-6859fd43bace"), "Celulares e Telefonia", "telefonia")
             ));
+
+            result.Add(new Product(
+                new Guid("0f8e8418-f3a3-4329-91c6-4548dc6af16b"),
+                "Smartphone Apple iPhone Xr 128GB",
+                "smartphone-apple-iphone-xr-128gb",
+                4949.10,
+                "Brilha em tudo. Nova Liquid Retina, a tela LCD mais avançada da indústria. Face ID ainda mais rápido. O chip mais inteligente e poderoso em um smartphone e um sistema de câmera inovador. iPhone XR. Impressionante de qualquer ângulo.",
+                "Apple",
+                new string[]{
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-apple-iphone-xr-128gb.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-apple-iphone-xr-128gb-002.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-apple-iphone-xr-128gb-003.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-apple-iphone-xr-128gb-004.jpg"
+                },
+                new Category(new Guid("044dae05-30a1-4ced-8eee-6859fd43bace"), "Celulares e Telefonia", "telefonia")
+            ));
             // 
-            // 0f8e8418-f3a3-4329-91c6-4548dc6af16b
+            // 
             // 1c0487fd-1e33-47ec-9541-f8de43d8abfe
             // f58448de-bb53-48fa-8347-70bad73f1ec4
             // dd5a0bf0-d2f1-4b13-a50e-bb4946862cab
