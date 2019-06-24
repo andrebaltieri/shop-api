@@ -14,8 +14,8 @@ namespace shop.Controllers
         public IList<Category> Get() => Database.Context.Categories();
 
         [HttpGet]
-        [Route("{id}/products")]
-        public object Products(Guid id) => Database.Context.Products().Where(x => x.Category.Id == id).Select(x => new
+        [Route("{tag}/products")]
+        public object Products(string tag) => Database.Context.Products().Where(x => x.Category.Tag.ToLower() == tag.ToLower()).Select(x => new
         {
             Id = x.Id,
             Title = x.Title,
