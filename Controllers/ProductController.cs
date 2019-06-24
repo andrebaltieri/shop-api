@@ -21,6 +21,18 @@ namespace shop.Controllers
         }).OrderBy(x => x.Title);
 
         [HttpGet]
+        [Route("brands/{brand}")]
+        public object GetByBrand(string brand) => Database.Context.Products().Where(x => x.Brand.ToLower() == brand.ToLower()).Select(x => new
+        {
+            Id = x.Id,
+            Title = x.Title,
+            Brand = x.Brand,
+            Tag = x.Tag,
+            Price = x.Price,
+            Image = x.Images[0]
+        }).OrderBy(x => x.Title);
+
+        [HttpGet]
         [Route("{tag}")]
         public Product Details(string tag) => Database.Context.Products().Where(x => x.Tag.ToLower() == tag.ToLower()).FirstOrDefault();
     }
