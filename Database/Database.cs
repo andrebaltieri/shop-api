@@ -33,14 +33,14 @@ namespace shop.Database
                 "Primeiro Android One do Brasil, o Motorola One chegou para inovar os seus dias, deixando tudo mais prático, rápido e moderno. Com ele, as mais recentes inovações tecnológicas do Google se ajustam automaticamente às suas necessidades, chegando até você com muito mais segurança.<br/><br/>Sua Tela Max Vision de 5,9’’ HD com proporção de 19:9 permite com seus filmes e séries sejam reproduzidos com nitidez e riqueza de detalhes, além de fazer com que você mergulhe numa experiência totalmente imersiva.<br/><br/>O Motorola One apresenta um sistema de câmera dupla avançado de 13MP + 2MP, que deixam suas fotos com aparência profissional, já que os seus recursos avançados facilitam uma melhor captura da imagem. Tudo isso, somados à um processador Octa-core, 4GB de memória RAM e 64GB de memória interna.<br/><br/>Ah! E a Bateria vem com 3000 mAh, garantindo um dia inteiro com uma única carga. Isso porque o carregador TurboPower oferece 6 horas de bateria em apenas 20 minutos de carregamento.<br/><br/>Motorola One: smartphone inteligente ao alcance de suas mãos!<br/><br/>",
                 "Motorola",
                 new string[]{
-                    "smartphone-motorola-one-64gb",
-                    "smartphone-motorola-one-64gb-002",
-                    "smartphone-motorola-one-64gb-003",
-                    "smartphone-motorola-one-64gb-004",
-                    "smartphone-motorola-one-64gb-005",
-                    "smartphone-motorola-one-64gb-006",
-                    "smartphone-motorola-one-64gb-007",
-                    "smartphone-motorola-one-64gb-008",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-motorola-one-64gb.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-motorola-one-64gb-002.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-motorola-one-64gb-003.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-motorola-one-64gb-004.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-motorola-one-64gb-005.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-motorola-one-64gb-006.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-motorola-one-64gb-007.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-motorola-one-64gb-008.jpg",
                 },
                 new Category(new Guid("044dae05-30a1-4ced-8eee-6859fd43bace"), "Celulares e Telefonia", "telefonia")
             ));
