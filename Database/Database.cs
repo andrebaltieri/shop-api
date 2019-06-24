@@ -83,18 +83,18 @@ namespace shop.Database
             #region automotivo
             result.Add(new Product(
                 new Guid("1c0487fd-1e33-47ec-9541-f8de43d8abfe"),
-                "Smartphone Apple iPhone Xr 128GB",
-                "smartphone-apple-iphone-xr-128gb",
-                4949.10,
-                "Brilha em tudo. Nova Liquid Retina, a tela LCD mais avançada da indústria. Face ID ainda mais rápido. O chip mais inteligente e poderoso em um smartphone e um sistema de câmera inovador. iPhone XR. Impressionante de qualquer ângulo.",
-                "Apple",
+                "GPS Automotivo Garmin Drive 51",
+                "gps-automotivo-garmin-drive-51",
+                809.10,
+                "Navegador GPS dedicado e fácil de usar com visor brilhante de orientação dupla de 5.0 polegadas <br>O motorista alerta para curvas perigosas, mudanças de velocidade, radares de velocidade, travessias de ferrovias, travessias de animais e muito mais<br>TripAdvisor avaliações de pontos de interesse em viagens (POIs) como hotéis, restaurantes e atrações<br>O Garmin Real Directions apresenta guias como um amigo, usando pontos de referência, edifícios e semáforos reconhecíveis<br>",
+                "Garmin",
                 new string[]{
-                    "https://baltademos.blob.core.windows.net/eshop/smartphone-apple-iphone-xr-128gb.jpg",
-                    "https://baltademos.blob.core.windows.net/eshop/smartphone-apple-iphone-xr-128gb-002.jpg",
-                    "https://baltademos.blob.core.windows.net/eshop/smartphone-apple-iphone-xr-128gb-003.jpg",
-                    "https://baltademos.blob.core.windows.net/eshop/smartphone-apple-iphone-xr-128gb-004.jpg"
+                    "https://baltademos.blob.core.windows.net/eshop/gps-automotivo-garmin-drive-51.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/gps-automotivo-garmin-drive-51-002.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/gps-automotivo-garmin-drive-51-003.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/gps-automotivo-garmin-drive-51-004.jpg"
                 },
-                new Category(new Guid("044dae05-30a1-4ced-8eee-6859fd43bace"), "Celulares e Telefonia", "telefonia")
+                new Category(new Guid("795bc1b3-7455-436c-81b6-a06b4a037e30"), "Automotivo", "automotivo")
             ));
             #endregion
 
