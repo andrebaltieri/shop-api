@@ -44,7 +44,24 @@ namespace shop.Database
                 },
                 new Category(new Guid("044dae05-30a1-4ced-8eee-6859fd43bace"), "Celulares e Telefonia", "telefonia")
             ));
-            // 58b3f5b6-55e8-4aa4-a352-a2e061b8aa6d
+
+            result.Add(new Product(
+                new Guid("58b3f5b6-55e8-4aa4-a352-a2e061b8aa6d"),
+                "Smartphone Samsung Galaxy M20 64GB",
+                "smartphone-samsung-galaxy-m20-64gb",
+                1079,
+                "Desenvolvido especialmente para quem busca por um celular moderno sem precisar gastar muito, o Galaxy M20 é a melhor opção. Com câmeras potentes que registram praticamente tudo, o novo lançamento da Samsung ainda vem recheado de recursos que facilitam sua vida. Confira! :)",
+                "Samsung",
+                new string[]{
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-samsung-galaxy-m20-64gb.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-samsung-galaxy-m20-64gb-002.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-samsung-galaxy-m20-64gb-003.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-samsung-galaxy-m20-64gb-004.jpg",
+                    "https://baltademos.blob.core.windows.net/eshop/smartphone-samsung-galaxy-m20-64gb-005.jpg"
+                },
+                new Category(new Guid("044dae05-30a1-4ced-8eee-6859fd43bace"), "Celulares e Telefonia", "telefonia")
+            ));
+            // 
             // 0f8e8418-f3a3-4329-91c6-4548dc6af16b
             // 1c0487fd-1e33-47ec-9541-f8de43d8abfe
             // f58448de-bb53-48fa-8347-70bad73f1ec4
