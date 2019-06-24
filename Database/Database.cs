@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using shop.Models;
 
 namespace shop.Database
@@ -18,7 +19,7 @@ namespace shop.Database
             result.Add(new Category(new Guid("22e50030-9dcc-4c0b-8737-f27d88234492"), "Móveis e Decoração", "decor"));
             result.Add(new Category(new Guid("bc643a4a-cb0e-474c-bda0-8c83626e8ec0"), "Moda e Beleza", "moda"));
             result.Add(new Category(new Guid("c165ee33-9d8e-4100-a97a-5865724973c8"), "Games", "games"));
-            return result;
+            return result.OrderBy(x => x.Title).ToList();
         }
 
         public static List<Product> Products()

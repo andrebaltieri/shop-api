@@ -18,10 +18,10 @@ namespace shop.Controllers
             Tag = x.Tag,
             Price = x.Price,
             Image = x.Images[0]
-        });
+        }).OrderBy(x => x.Title);
 
         [HttpGet]
-        [Route("{id}")]
-        public Product Details(Guid id) => Database.Context.Products().Where(x => x.Id == id).FirstOrDefault();
+        [Route("{tag}")]
+        public Product Details(string tag) => Database.Context.Products().Where(x => x.Tag.ToLower() == tag.ToLower()).FirstOrDefault();
     }
 }
