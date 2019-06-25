@@ -1,5 +1,5 @@
-using System;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using shop.Models;
 
@@ -10,6 +10,7 @@ namespace shop.Controllers
     {
         [HttpGet]
         [Route("")]
+        [AllowAnonymous]
         public object Get() => Database.Context.Products().Select(x => new
         {
             Id = x.Id,
@@ -22,6 +23,7 @@ namespace shop.Controllers
 
         [HttpGet]
         [Route("brands/{brand}")]
+        [AllowAnonymous]
         public object GetByBrand(string brand) => Database.Context.Products().Where(x => x.Brand.ToLower() == brand.ToLower()).Select(x => new
         {
             Id = x.Id,
@@ -34,6 +36,7 @@ namespace shop.Controllers
 
         [HttpGet]
         [Route("{tag}")]
+        [AllowAnonymous]
         public Product Details(string tag) => Database.Context.Products().Where(x => x.Tag.ToLower() == tag.ToLower()).FirstOrDefault();
     }
 }

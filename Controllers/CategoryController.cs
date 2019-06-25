@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using shop.Models;
 
@@ -11,10 +12,12 @@ namespace shop.Controllers
     {
         [HttpGet]
         [Route("")]
+        [AllowAnonymous]
         public IList<Category> Get() => Database.Context.Categories();
 
         [HttpGet]
         [Route("{tag}/products")]
+        [AllowAnonymous]
         public object Products(string tag) => Database.Context.Products().Where(x => x.Category.Tag.ToLower() == tag.ToLower()).Select(x => new
         {
             Id = x.Id,

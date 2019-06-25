@@ -2,11 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using shop.Models;
+using store.Models;
 
 namespace shop.Database
 {
     public static class Context
     {
+        public static List<User> Users { get; set; }
+
         public static List<Category> Categories()
         {
             var result = new List<Category>();
