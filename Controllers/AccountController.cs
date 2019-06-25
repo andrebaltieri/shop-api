@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using store.Models;
@@ -12,13 +13,20 @@ namespace store.Controllers
         [AllowAnonymous]
         public IActionResult Authenticate([FromBody]User model)
         {
-            var service = new UserService();
-            var user = service.Authenticate(model.Username, model.Password);
+            try
+            {
+                var service = new UserService();
+                var user = service.Authenticate(model.Username, model.Password);
 
-            if (user == null)
-                return BadRequest(new { message = "Usuário ou senha inválidos" });
+                if (user == null)
+                    return BadRequest(new { message = "Usuário ou senha inválidos" });
 
-            return Ok(user);
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
 
         [HttpPost("")]
