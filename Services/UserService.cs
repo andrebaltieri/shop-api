@@ -14,9 +14,6 @@ namespace store.Services
         public User Authenticate(string username, string password)
         {
             var user = Context.Users.Where(x => x.Username == username && x.Password == password).FirstOrDefault();
-            Console.Clear();
-            Console.WriteLine(user.Username);
-            Console.WriteLine(user.Role);
 
             if (user == null)
                 return null;
