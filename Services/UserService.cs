@@ -31,11 +31,11 @@ namespace store.Services
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            user.Token = tokenHandler.WriteToken(token);
 
-            user.Password = null;
-
-            return user;
+            // Retorna o resultado
+            var result = new User(user.Name, user.Email, user.Username, "", user.Role);
+            result.Token = tokenHandler.WriteToken(token);
+            return result;
         }
 
         public User Create(User model)
