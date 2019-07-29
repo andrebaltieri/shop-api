@@ -11,7 +11,7 @@ namespace store.Models
             Id = Guid.NewGuid();
             Name = name;
             Email = email;
-            Image = "http://lorempixel.com/200/200/cats/";
+            Image = "https://picsum.photos/300/";
             Username = username;
             Password = password;
             Role = role;
