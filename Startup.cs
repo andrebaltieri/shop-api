@@ -20,7 +20,7 @@ namespace shop
         {
             Context.Users = new List<User>();
             Context.Users.Add(new User("Store Owner", "balta.io", "hello@balta.io", "balta.io", "admin"));
-            Context.Users.Add(new User("André Baltieri", "andre@balta.io", "andrebaltieri", "andrebaltieri", "user"));
+            Context.Users.Add(new User("Bruce Wayne", "batman@balta.io", "batman", "batman", "user"));
         }
 
         public void ConfigureServices(IServiceCollection services)
