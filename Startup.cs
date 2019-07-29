@@ -19,8 +19,8 @@ namespace shop
         public Startup()
         {
             Context.Users = new List<User>();
-            Context.Users.Add(new User(1, "Store Owner", "balta.io", "hello@balta.io", "balta.io", "admin", ""));
-            Context.Users.Add(new User(2, "André Baltieri", "andre@balta.io", "andrebaltieri", "andrebaltieri", "user", ""));
+            Context.Users.Add(new User("Store Owner", "balta.io", "hello@balta.io", "balta.io", "admin"));
+            Context.Users.Add(new User("André Baltieri", "andre@balta.io", "andrebaltieri", "andrebaltieri", "user"));
         }
 
         public void ConfigureServices(IServiceCollection services)

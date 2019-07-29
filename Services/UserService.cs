@@ -37,5 +37,13 @@ namespace store.Services
 
             return user;
         }
+
+        public User Create(User model)
+        {
+            var user = new User(model.Name, model.Email, model.Username, model.Password, "user");
+            Context.Users.Add(user);
+            return user;
+        }
+
     }
 }

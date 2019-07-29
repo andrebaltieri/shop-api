@@ -1,22 +1,23 @@
+using System;
+
 namespace store.Models
 {
     public class User
     {
         public User() { }
 
-        public User(int id, string name, string email, string username, string password, string role, string token)
+        public User(string name, string email, string username, string password, string role)
         {
-            Id = id;
+            Id = Guid.NewGuid();
             Name = name;
             Email = email;
             Image = "http://lorempixel.com/200/200/cats/";
             Username = username;
             Password = password;
             Role = role;
-            Token = token;
         }
 
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Image { get; set; }

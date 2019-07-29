@@ -34,10 +34,10 @@ namespace store.Controllers
         public IActionResult Create([FromBody]User model)
         {
             var service = new UserService();
-            var user = service.Authenticate(model.Username, model.Password);
+            var user = service.Create(model);
 
             if (user == null)
-                return BadRequest(new { message = "Usuário ou senha inválidos" });
+                return BadRequest(new { message = "Não foi possível criar seu usuário" });
 
             return Ok(user);
         }
